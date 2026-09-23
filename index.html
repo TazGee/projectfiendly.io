@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ProjectFriendly - Privacy Policy</title>
+
+    <meta name="description"
+          content="Privacy Policy for ProjectFriendly. ProjectFriendly does not directly collect personal information from users.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --background: #0b0f19;
+            --card: #121827;
+            --card-light: #182033;
+            --text: #f5f7fb;
+            --text-secondary: #aab3c5;
+            --accent: #6c8cff;
+            --accent-hover: #829cff;
+            --border: rgba(255, 255, 255, 0.08);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+
+            background:
+                radial-gradient(
+                    circle at top left,
+                    rgba(108, 140, 255, 0.12),
+                    transparent 35%
+                ),
+                radial-gradient(
+                    circle at top right,
+                    rgba(120, 80, 255, 0.08),
+                    transparent 30%
+                ),
+                var(--background);
+
+            color: var(--text);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: min(100% - 40px, 900px);
+            margin: 0 auto;
+        }
+
+        /* Header */
+
+        header {
+            padding: 70px 0 50px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 72px;
+            height: 72px;
+            margin: 0 auto 24px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 20px;
+
+            background: linear-gradient(
+                135deg,
+                var(--accent),
+                #8b6cff
+            );
+
+            box-shadow:
+                0 15px 40px rgba(108, 140, 255, 0.25);
+
+            font-size: 30px;
+            font-weight: 800;
+            color: white;
+        }
+
+        header h1 {
+            font-size: clamp(2rem, 5vw, 3.2rem);
+            line-height: 1.2;
+            margin-bottom: 12px;
+            letter-spacing: -1px;
+        }
+
+        header p {
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+        }
+
+        .updated {
+            display: inline-block;
+            margin-top: 18px;
+            padding: 7px 14px;
+
+            border: 1px solid var(--border);
+            border-radius: 999px;
+
+            background: rgba(255, 255, 255, 0.03);
+
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+
+        /* Main */
+
+        main {
+            padding-bottom: 80px;
+        }
+
+        .privacy-summary {
+            margin-bottom: 32px;
+            padding: 28px;
+
+            background: linear-gradient(
+                145deg,
+                rgba(108, 140, 255, 0.12),
+                rgba(108, 140, 255, 0.04)
+            );
+
+            border: 1px solid rgba(108, 140, 255, 0.2);
+            border-radius: 18px;
+        }
+
+        .privacy-summary h2 {
+            margin-bottom: 10px;
+            font-size: 1.25rem;
+        }
+
+        .privacy-summary p {
+            color: var(--text-secondary);
+        }
+
+        .section {
+            margin-bottom: 20px;
+            padding: 30px;
+
+            background: rgba(18, 24, 39, 0.82);
+
+            border: 1px solid var(--border);
+            border-radius: 18px;
+
+            backdrop-filter: blur(12px);
+
+            transition:
+                border-color 0.2s ease,
+                transform 0.2s ease;
+        }
+
+        .section:hover {
+            border-color: rgba(108, 140, 255, 0.22);
+            transform: translateY(-1px);
+        }
+
+        .section h2 {
+            margin-bottom: 15px;
+
+            font-size: 1.35rem;
+            line-height: 1.4;
+
+            letter-spacing: -0.3px;
+        }
+
+        .section p {
+            margin-bottom: 14px;
+            color: var(--text-secondary);
+        }
+
+        .section p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Lists */
+
+        ul {
+            margin: 15px 0 5px 20px;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 7px;
+            padding-left: 5px;
+        }
+
+        /* Highlight */
+
+        .highlight {
+            color: var(--text);
+            font-weight: 600;
+        }
+
+        .accent {
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        /* Google Play card */
+
+        .google-card {
+            margin-top: 20px;
+            padding: 20px;
+
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+
+            background: rgba(255, 255, 255, 0.025);
+
+            border: 1px solid var(--border);
+            border-radius: 14px;
+        }
+
+        .google-icon {
+            flex-shrink: 0;
+
+            width: 42px;
+            height: 42px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 10px;
+
+            background: rgba(108, 140, 255, 0.12);
+
+            font-size: 20px;
+        }
+
+        .google-card strong {
+            display: block;
+            margin-bottom: 4px;
+            color: var(--text);
+        }
+
+        .google-card span {
+            color: var(--text-secondary);
+            font-size: 0.92rem;
+        }
+
+        /* Contact */
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        /* Footer */
+
+        footer {
+            padding: 30px 20px;
+
+            border-top: 1px solid var(--border);
+
+            text-align: center;
+
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+
+        footer strong {
+            color: var(--text);
+        }
+
+        /* Responsive */
+
+        @media (max-width: 600px) {
+            .container {
+                width: min(100% - 24px, 900px);
+            }
+
+            header {
+                padding: 50px 0 35px;
+            }
+
+            .logo {
+                width: 62px;
+                height: 62px;
+                border-radius: 17px;
+                font-size: 25px;
+            }
+
+            .section {
+                padding: 22px;
+                border-radius: 15px;
+            }
+
+            .privacy-summary {
+                padding: 22px;
+                border-radius: 15px;
+            }
+
+            .section h2 {
+                font-size: 1.2rem;
+            }
+
+            .google-card {
+                padding: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+
+            <div class="logo">
+                PF
+            </div>
+
+            <h1>ProjectFriendly</h1>
+
+            <p>Privacy Policy</p>
+
+            <div class="updated">
+                Last Updated: September 23, 2026
+            </div>
+
+        </div>
+    </header>
+
+
+    <main>
+        <div class="container">
+
+            <!-- Privacy Summary -->
+
+            <div class="privacy-summary">
+                <h2>Your Privacy Matters</h2>
+
+                <p>
+                    ProjectFriendly does not directly collect, store, sell,
+                    or share personal information from its users.
+                    The only external account-related functionality used
+                    by the game is Google Play Games sign-in, which is used
+                    to associate and save the player's game progress.
+                </p>
+            </div>
+
+
+            <!-- 1 -->
+
+            <section class="section">
+                <h2>1. Information We Collect</h2>
+
+                <p>
+                    <span class="highlight">
+                        ProjectFriendly does not directly collect any personal
+                        information from users.
+                    </span>
+                </p>
+
+                <p>
+                    The Game does not request or collect information such as:
+                </p>
+
+                <ul>
+                    <li>Name</li>
+                    <li>Email address</li>
+                    <li>Phone number</li>
+                    <li>Home address</li>
+                    <li>Precise location</li>
+                    <li>Photos or videos</li>
+                    <li>Contacts</li>
+                    <li>Messages</li>
+                    <li>Payment information</li>
+                    <li>Device identifiers for tracking purposes</li>
+                    <li>Advertising identifiers for personalized advertising</li>
+                    <li>Other personally identifiable information</li>
+                </ul>
+
+                <p>
+                    The Game does not contain forms or other mechanisms
+                    designed to directly collect personal information
+                    from users.
+                </p>
+            </section>
+
+
+            <!-- 2 -->
+
+            <section class="section">
+                <h2>2. Google Play Games</h2>
+
+                <p>
+                    ProjectFriendly may use
+                    <span class="accent">Google Play Games</span>
+                    services to allow players to sign in and associate
+                    their game progress with their Google Play Games account.
+                </p>
+
+                <p>
+                    Google Play Games sign-in is used only for
+                    game-related functionality, primarily to identify
+                    the player's game profile and allow their game progress
+                    to be saved and restored.
+                </p>
+
+                <p>
+                    ProjectFriendly does not intentionally access or collect
+                    additional personal information from the player's
+                    Google account beyond what is necessary for this
+                    functionality.
+                </p>
+
+                <p>
+                    The Game does not use Google Play Games sign-in to
+                    create advertising profiles, provide personalized
+                    advertising, or track users for marketing purposes.
+                </p>
+
+                <div class="google-card">
+                    <div class="google-icon">
+                        ▶
+                    </div>
+
+                    <div>
+                        <strong>Google Play Games</strong>
+
+                        <span>
+                            Used for player sign-in and game progress
+                            functionality.
+                        </span>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- 3 -->
+
+            <section class="section">
+                <h2>3. Game Progress</h2>
+
+                <p>
+                    When Google Play Games sign-in is used, information
+                    associated with the player's game progress may be
+                    stored through the services used by the Game.
+                </p>
+
+                <p>
+                    This information is used solely to provide gameplay
+                    functionality, including:
+                </p>
+
+                <ul>
+                    <li>Saving game progress</li>
+                    <li>Restoring game progress</li>
+                    <li>Associating progress with the player's Google Play Games profile</li>
+                    <li>Allowing players to continue their progress across supported sessions or devices</li>
+                </ul>
+
+                <p>
+                    ProjectFriendly does not use game progress information
+                    for advertising, marketing, profiling, or selling
+                    information to third parties.
+                </p>
+            </section>
+
+
+            <!-- 4 -->
+
+            <section class="section">
+                <h2>4. Data Sharing</h2>
+
+                <p>
+                    ProjectFriendly does not sell, rent, or share users'
+                    personal information with third parties.
+                </p>
+
+                <p>
+                    The Game only relies on third-party services when
+                    necessary to provide its intended functionality,
+                    such as Google Play Games for authentication and
+                    game progress functionality.
+                </p>
+
+                <p>
+                    ProjectFriendly does not use personal information
+                    for targeted advertising or user profiling.
+                </p>
+            </section>
+
+
+            <!-- 5 -->
+
+            <section class="section">
+                <h2>5. Analytics and Advertising</h2>
+
+                <p>
+                    ProjectFriendly does not intentionally collect
+                    personal information for analytics, behavioral
+                    profiling, or advertising purposes.
+                </p>
+
+                <p>
+                    The Game does not use personal information to provide
+                    personalized advertisements.
+                </p>
+            </section>
+
+
+            <!-- 6 -->
+
+            <section class="section">
+                <h2>6. Children's Privacy</h2>
+
+                <p>
+                    ProjectFriendly does not knowingly collect personal
+                    information from children or adults.
+                </p>
+
+                <p>
+                    Because the Game does not directly collect personal
+                    information, users can play the Game without providing
+                    personal information directly to ProjectFriendly.
+                </p>
+
+                <p>
+                    Parents and guardians should be aware that Google Play
+                    Games is a separate service operated by Google and may
+                    have its own policies and requirements.
+                </p>
+            </section>
+
+
+            <!-- 7 -->
+
+            <section class="section">
+                <h2>7. Data Security</h2>
+
+                <p>
+                    Since ProjectFriendly does not directly collect or
+                    maintain users' personal information, it does not
+                    maintain a database of users' personal information.
+                </p>
+
+                <p>
+                    Any information handled by third-party services,
+                    such as Google Play Games, is subject to the security
+                    practices and privacy policies of those services.
+                </p>
+            </section>
+
+
+            <!-- 8 -->
+
+            <section class="section">
+                <h2>8. Third-Party Services</h2>
+
+                <p>
+                    ProjectFriendly may use the following third-party
+                    service:
+                </p>
+
+                <div class="google-card">
+                    <div class="google-icon">
+                        ▶
+                    </div>
+
+                    <div>
+                        <strong>Google Play Games</strong>
+
+                        <span>
+                            Used for player sign-in and game progress
+                            functionality.
+                        </span>
+                    </div>
+                </div>
+
+                <p style="margin-top: 20px;">
+                    Google's services are governed by Google's own
+                    privacy policy and terms of service.
+                </p>
+            </section>
+
+
+            <!-- 9 -->
+
+            <section class="section">
+                <h2>9. Changes to This Privacy Policy</h2>
+
+                <p>
+                    This Privacy Policy may be updated from time to time
+                    to reflect changes to ProjectFriendly or its services.
+                </p>
+
+                <p>
+                    If this Privacy Policy is changed, the updated version
+                    will be published on this page with a new
+                    "Last Updated" date.
+                </p>
+            </section>
+
+
+            <!-- 10 -->
+
+            <section class="section contact">
+                <h2>10. Contact</h2>
+
+                <p>
+                    If you have any questions about this Privacy Policy
+                    or the privacy practices of ProjectFriendly, you may
+                    contact the developer through the contact information
+                    provided on the game's Google Play Store listing.
+                </p>
+            </section>
+
+        </div>
+    </main>
+
+
+    <footer>
+        <strong>ProjectFriendly</strong>
+        <br>
+        Privacy Policy · Last Updated September 23, 2026
+    </footer>
+
+</body>
+</html>
